@@ -43,12 +43,6 @@ On Windows:
 
 .\finance_manager.exe
 
-On macOS/Linux:
-
-./finance_manager
-
-The application will start, and you can interact with it through the on-screen menu.
-
 ⚙️ How to Use
 Once the application is running, you will be presented with the main menu:
 
