@@ -1,12 +1,14 @@
-Simple C++ Financial Management CLI Application
+Simple Python Financial Management CLI Application
+
 Author: Anshuman Iyer
 
 📖 Overview
-This is a straightforward, console-based Financial Management application written in C++. It allows users to track their income and expenses through a simple command-line interface. All transaction data is saved locally to a transactions.txt file, ensuring data persistence between sessions.
+This is a straightforward, console-based Financial Management application written in Python. It allows users to track their income and expenses through a simple command-line interface. All transaction data is saved locally to a transactions.txt file, ensuring data persistence between sessions.
 
 The application provides core functionalities for personal finance tracking, including adding, viewing, updating, and deleting transactions, as well as generating a summary of financial activity.
 
 ✨ Features
+
 Add Transaction: Add new income or expense records with details like date, category, amount, and a description.
 
 View All Transactions: Display a neatly formatted table of all recorded transactions.
@@ -19,29 +21,32 @@ Financial Summary: Get a quick overview of total income, total expenses, and the
 
 Data Persistence: Transactions are automatically loaded from and saved to a local file (transactions.txt), so your data is always there when you restart the application.
 
-Input Validation: Includes basic checks to ensure the user enters valid choices and data formats.
+Input Validation: Includes checks to ensure the user enters valid choices and data formats (e.g., numbers for amounts).
 
-🛠️ How to Compile and Run
-This program is written in standard C++ and has no external dependencies. You can compile it using any modern C++ compiler, such as g++.
+Zero Dependencies: Runs using only standard Python libraries.
+
+🛠️ How to Run
+This program is written in standard Python and has no external dependencies.
 
 Prerequisites
-A C++ compiler (like g++ or Clang).
 
-Compilation Steps
-Save the Code: Save the provided source code into a file named finance_manager.cpp.
+Python 3.6 or newer (due to the use of f-strings).
+
+Running the Application
+
+Save the Code: Save the provided source code into a file named financial_management.py.
 
 Open a Terminal or Command Prompt: Navigate to the directory where you saved the file.
 
-Compile the Program: Run the following command to compile the code. This will create an executable file.
+Run the Program: Run the following command to start the application:
 
-g++ finance_manager.cpp -o finance_manager
+python financial_management.py
 
-Running the Application
-After a successful compilation, run the application with the following command:
 
-On Windows:
+Note: On some macOS or Linux systems, you may need to use the python3 command instead:
 
-.\finance_manager.exe
+python3 financial_management.py
+
 
 ⚙️ How to Use
 Once the application is running, you will be presented with the main menu:
@@ -56,12 +61,13 @@ Once the application is running, you will be presented with the main menu:
 ---------------------------------
 Enter your choice:
 
+
 Simply enter the number corresponding to the action you wish to perform and follow the on-screen prompts. The application will automatically save your changes after adding, updating, or deleting a transaction. Choosing option 6 will also save the current state before exiting.
 
 📁 Data Storage
-The application stores all financial data in a plain text file named transactions.txt in the same directory as the executable.
+The application stores all financial data in a plain text file named transactions.txt in the same directory as the script.
 
-The first line of the file stores the nextId to ensure new transactions get a unique ID.
+The first line of the file stores the next_id to ensure new transactions get a unique ID.
 
 Subsequent lines store the transaction data in a comma-separated format:
 id,date,type,category,amount,description
