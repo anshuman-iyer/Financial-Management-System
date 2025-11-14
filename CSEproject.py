@@ -1,5 +1,5 @@
 # Financial Management Application
-# Made by Anshuman Iyer (Apllication No. 25BAC10027), 5
+# Made by Anshuman Iyer (Apllication No. 25BAC10027)
 
 import os
 
@@ -279,4 +279,5 @@ def main():
 
 # Entry point for the script
 if __name__ == "__main__":
+
     main()
