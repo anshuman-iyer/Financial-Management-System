@@ -1,5 +1,5 @@
 # Financial Management Application
-# Made by Anshuman Iyer (Apllication No. 25BAC10027)
+# Made by Anshuman Iyer (Apllication No. 25BAC10027), 5
 
 import os
 
@@ -162,11 +162,11 @@ def show_summary():
     expense_by_category = {}
 
     for t in transactions:
-        if t['type'] == "Income":
+        if t['type'] == "Income": # Checks if the type of transaction is an income
             total_income += t['amount']
-        else:
+        else: # If not income, it shows expenses
             total_expense += t['amount']
-            # Use .get() to safely handle new categories
+
             expense_by_category[t['category']] = expense_by_category.get(t['category'], 0) + t['amount']
 
     balance = total_income - total_expense
@@ -279,5 +279,4 @@ def main():
 
 # Entry point for the script
 if __name__ == "__main__":
-
     main()
